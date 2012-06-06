@@ -13,6 +13,7 @@
 # [Remember: No empty lines between comments and class definition]
 class httpd::params {
   $ServerAdmin = "outages@example.com"
-
+  $owner = "root"
+  $group = "root"
 
 }

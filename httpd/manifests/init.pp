@@ -37,8 +37,8 @@ class httpd (
   $service_ensure = 'stopped',
   $service_hasstatus = 'true',
   $service_hasrestart = 'true',
-  $owner = "root",
-  $group = "root") inherits httpd::params {
+  $owner = ${httpd::params::owner},
+  $group = ${httpd::params::group}) inherits httpd::params {
 
 
   # include httpd::install, httpd::config, httpd::service
